@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    
+    <script defer src="./init-firebase.js"></script>
+</head>
+<body>
+    <div style="display: flex;flex-direction: column; justify-content: center; align-items: center; padding-top: 100px;">
+        <h1>Data</h1>
+        <form action="get">
+            <label for="_username">Username</label><br>
+            <input type="text" placeholder="Title" id="_title"><br><br>
+            <label for="_Desc">Description</label><br>
+            <textarea name="text" id="_Desc" cols="30" rows="3" placeholder="Description"></textarea><br>
+            <label for="_dob">Date Of Birth</label><br>
+            <input type="date" placeholder="" id="_Dob"><br><br>
+        </form>
+        <div style="flex-direction: row;">
+            <h2>To Do List</h2>
+            <input type="text" >
+           
+        <button onclick="getdata()">Get Data</button>
+        <button onclick="add()">Add</button><br><br>
+    </div>
+    </div>
+    
+
+    <script src="./data.js"></script>
+</body>
+</html>
